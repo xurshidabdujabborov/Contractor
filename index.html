@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contractor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Libs/reset.css">
+    <link rel="stylesheet" href="Libs/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="Libs/css/all.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <div class="joj">
+                            <h1>Contractor</h1>
+                        </div>
+                    </div>
+                    <div class="col-auto activeBars">
+                        <div class="bars">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 activeMenuBars">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Pages</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">Cart (0)</a>
+                            </li>
+                            <li>
+                                <a href="#" class="BgRed signUp">Get a quote</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="headerTitle">
+                    <h1>We provide effective <br> contracting services</h1>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit varius rhoncus,
+                        <br> nullam pulvinar ut sollicitudin dictumst porttitor porttitor quis quisque erat.</p>
+                    <div class="flex">
+                        <a href="#" class="deg">Get a quote</a>
+                        <a href="#">Our services</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="headerLogin">
+            <div class="contaainer">
+                <h2 class="size">Even More </h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="box">
+                            <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M0 0H70V70H0V0Z" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_2_465" transform="scale(0.00694444)" />
+                                    </pattern>
+                                    <image id="image0_2_465" width="144" height="144"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAMAAADQmBKKAAAAbFBMVEUAAAAYGBgYGBgYGBgYGBgYGBgYGBgZGRkQEBD/UAD/TQD/TQAZGRkYGBgXFxcZGRkZGRkVFRUXFxcXFxfRQgX/TQAYGBjuSgLtSQL/UAAYGBj/TQH/////6d//YyD/ekDFQAb/0r//bzD/WBE94UVgAAAAGnRSTlMAgCBgv99A7xAg37+QoHDPUDCvsO+of8/PEHOUjrQAAAR8SURBVHja7JnLTutAEERjezzxwu9ILPj/D71kFKdANZfTgcCKXuXRts+k+lFSTo/FkMdlb8IxLWMeTk8PwaTXL0Qa8+n5kV/SOc7gUM0zobaZYTjOad6eANPOO8PEofZu+w5MN1Vh+iYYffXqvWu/UsHd5Lcbu62cM3qTcpxt9WP109o+ArOO9bO9fVe+yMHa00WVWKZ1CA4aU36a83Hv6fpijgHN19zpfopuNzAYU0N+SV6Gc3stpwOoK00cAyo3Ww+gtvSrWoQmQq73dle+FNBQKGPT9/XGIaDjRAY1Zxo059TsNaDTEi6iXEQ51YCmpibFdhs03gSpSNtUgcbrq4Zg7pmjAR3X5zFVx1SyOjuKvw6UrYiwhOpApZ2tg5a3xyr6sSswnwENJROLSIl1IE3fdVo+1Oxwn1W3AQpAOjjEqp+yDqRoNYXb2wNSSScgfTwGS6gBIMU2HQeYdZIQ0G1GUqgdGUj53V3rLQw0nENF1GrrAZDyb0lJKQSkIuqARyOdgaTwRSl9EEgrCkJLD4GU073TIIeBNioiPWALA+WbwjrMGAKSzQE/I+OEQGKYnI6BpAaX0CUCpBRNN2kWApr1sP/GRRcjkGaJr0EGUkeze20ZyBWTZkMMiH2sCh+BTCN/z0AqInavDGSTR89OCGRDD6xHGOiimnHNGEg+lt1rbNv79koSgYC0ONG9RoE6pZtmDEQ+Vm3LQP5zuL1jIPlYLiEG0qJHSAcyfnSvDFTvEdk0BiIfK/cKQG7N/FBtAAh9rJeYA5FismkMBD5WTchA3lA+LBkIfKztOgTqTTGzaQAkH8vulYE2axCzaQAEPlarDoF80buJZCDysXKvDOTWzC0AAoGPlXsFIGoPzXsGki7gXhHIFfOVT0DoY+VeGUi6gGYApN4G94pAqyvmE4qB5GPBvSLQRYqBZgTkReQDgYEGt2a+8gEIfKz2LgNpP4BmDCQfC+4VgMz11LztQEC+Qt29ApAtetaMgWQyfJoREMhuNg2AzMdaCREQrGizaQjkRtU/ZCBQTDYNgOzHcPdKQC6Ih9LPTYnyvL0pMepzxVIpl5KYmo9xLolNif1dgluzqk2LR7314uHyely+d8Ph4csn/Avn0WhtkoVDNQia/SJQH/tHYGlC0deB+uDVphisfI7kQNDI4F/Apv0YEFsznyQ/BcRmmjV7PpBbM9a2exYQK8aa/QaQdhpH8wdEQL8zqf+A/oD+tWtHKwgCQRSGKdxdzMAbpaI0rfd/x3C8ccADKxvkbOe/HQa+m1WUTQVZP2UEEUQQQQQRRBBBBBFkElSCbjGgEpUAuoOqGFCFtgn6O9BTtw300svvL4D6h6rbBur0dk8QQT8DzSHQEPN/aECgeUxQ7qDgphCocRIABSdBkEyD9VNGEEGpoIOfQqCrl+p1UO2lCwLJ9Gz9OUSQOZArphCoKaQAXh2F1CCQTGvrx54gy6BONW4DjXq7z/LbniBLoBOojQG1aDunv7AEEUQQQSsgp9rBtUHdDu6gEbTIBsgfF/lk0AezQce/6OIO6AAAAABJRU5ErkJggg==" />
+                                </defs>
+                            </svg>
+                            <h3 class="faf">Project Planning</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit quis eget morbi
+                                fermentum <br> sagittis, et mi lacus ornare tincidunt id.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="box">
+                            <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M0 0H70V70H0V0Z" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_2_465" transform="scale(0.00694444)" />
+                                    </pattern>
+                                    <image id="image0_2_465" width="144" height="144"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAMAAADQmBKKAAAAbFBMVEUAAAAYGBgYGBgYGBgYGBgYGBgYGBgZGRkQEBD/UAD/TQD/TQAZGRkYGBgXFxcZGRkZGRkVFRUXFxcXFxfRQgX/TQAYGBjuSgLtSQL/UAAYGBj/TQH/////6d//YyD/ekDFQAb/0r//bzD/WBE94UVgAAAAGnRSTlMAgCBgv99A7xAg37+QoHDPUDCvsO+of8/PEHOUjrQAAAR8SURBVHja7JnLTutAEERjezzxwu9ILPj/D71kFKdANZfTgcCKXuXRts+k+lFSTo/FkMdlb8IxLWMeTk8PwaTXL0Qa8+n5kV/SOc7gUM0zobaZYTjOad6eANPOO8PEofZu+w5MN1Vh+iYYffXqvWu/UsHd5Lcbu62cM3qTcpxt9WP109o+ArOO9bO9fVe+yMHa00WVWKZ1CA4aU36a83Hv6fpijgHN19zpfopuNzAYU0N+SV6Gc3stpwOoK00cAyo3Ww+gtvSrWoQmQq73dle+FNBQKGPT9/XGIaDjRAY1Zxo059TsNaDTEi6iXEQ51YCmpibFdhs03gSpSNtUgcbrq4Zg7pmjAR3X5zFVx1SyOjuKvw6UrYiwhOpApZ2tg5a3xyr6sSswnwENJROLSIl1IE3fdVo+1Oxwn1W3AQpAOjjEqp+yDqRoNYXb2wNSSScgfTwGS6gBIMU2HQeYdZIQ0G1GUqgdGUj53V3rLQw0nENF1GrrAZDyb0lJKQSkIuqARyOdgaTwRSl9EEgrCkJLD4GU073TIIeBNioiPWALA+WbwjrMGAKSzQE/I+OEQGKYnI6BpAaX0CUCpBRNN2kWApr1sP/GRRcjkGaJr0EGUkeze20ZyBWTZkMMiH2sCh+BTCN/z0AqInavDGSTR89OCGRDD6xHGOiimnHNGEg+lt1rbNv79koSgYC0ONG9RoE6pZtmDEQ+Vm3LQP5zuL1jIPlYLiEG0qJHSAcyfnSvDFTvEdk0BiIfK/cKQG7N/FBtAAh9rJeYA5FismkMBD5WTchA3lA+LBkIfKztOgTqTTGzaQAkH8vulYE2axCzaQAEPlarDoF80buJZCDysXKvDOTWzC0AAoGPlXsFIGoPzXsGki7gXhHIFfOVT0DoY+VeGUi6gGYApN4G94pAqyvmE4qB5GPBvSLQRYqBZgTkReQDgYEGt2a+8gEIfKz2LgNpP4BmDCQfC+4VgMz11LztQEC+Qt29ApAtetaMgWQyfJoREMhuNg2AzMdaCREQrGizaQjkRtU/ZCBQTDYNgOzHcPdKQC6Ih9LPTYnyvL0pMepzxVIpl5KYmo9xLolNif1dgluzqk2LR7314uHyely+d8Ph4csn/Avn0WhtkoVDNQia/SJQH/tHYGlC0deB+uDVphisfI7kQNDI4F/Apv0YEFsznyQ/BcRmmjV7PpBbM9a2exYQK8aa/QaQdhpH8wdEQL8zqf+A/oD+tWtHKwgCQRSGKdxdzMAbpaI0rfd/x3C8ccADKxvkbOe/HQa+m1WUTQVZP2UEEUQQQQQRRBBBBBFkElSCbjGgEpUAuoOqGFCFtgn6O9BTtw300svvL4D6h6rbBur0dk8QQT8DzSHQEPN/aECgeUxQ7qDgphCocRIABSdBkEyD9VNGEEGpoIOfQqCrl+p1UO2lCwLJ9Gz9OUSQOZArphCoKaQAXh2F1CCQTGvrx54gy6BONW4DjXq7z/LbniBLoBOojQG1aDunv7AEEUQQQSsgp9rBtUHdDu6gEbTIBsgfF/lk0AezQce/6OIO6AAAAABJRU5ErkJggg==" />
+                                </defs>
+                            </svg>
+                            <h3 class="faf">Project Planning</h3>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit quis eget morbi
+                                fermentum <br> sagittis, et mi lacus ornare tincidunt id.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <i class="fa fa-times close" aria-hidden="true"></i>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img src="./img/IMAGE.png" alt="">
+                </div>
+                <div cLass="col-lg-6 col-md-12 col-sm-12">
+                    <div class="car">
+                        <a href="#">/About Us</a>
+                        <h3>A team of reliable and experienced contractors</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit tristique imperdiet nisi
+                            metus, viverra nulla aliquet dui porta porttitor neque lectus diam justo lobortis purus in
+                            elit, elementum dignissim nullam vitae pellentesque aliquet aliquam sagittis pulvinar
+                            egestas morbi suspendisse eleifend.</p>
+                        <div class="card">
+                            <div class="pop">
+                                <h1 id="countdown"> <span>+</span> 350</h1>
+                                <p class="text">Executed Projects</p>
+                            </div>
+                            <div class="pop">
+                                <h1 id="count">12 <span>Y</span></h1>
+                                <p class="text">Executed Projects</p>
+                            </div>
+                            <div class="pop">
+                                <h1 id="lil"> <span>+</span> 400</h1>
+                                <p class="text">Executed Projects</p>
+                            </div>
+                        </div>
+                        <button class="signUp">About our company</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="About">
+                <h2 class="size">About our company</h2>
+                <div class="container">
+                    <div class="owl-carousel">
+                        <div class="img">
+                            <img src="./img/1.jpg" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="./img/306321-wallpaper-oslo-norway-house-night-lights-water-reflection.jpg"
+                                alt="">
+                        </div>
+                        <div class="img">
+                            <img src="./img/56016c3c9dd7cc18008bc1fe.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <i class="fa fa-times close" aria-hidden="true"></i>
+            </div>
+        </div>
+    </main>
+    <!-- services -->
+    <section class="services">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <a href="#">/Our Services</a>
+                    <h2 class="size">A comprehensive <br> set of services</h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right">
+                        <a href="#" class="BgRed">Get a quote</a>
+                        <a href="#" class="gog">Browse services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="var">
+                        <img src="./img/lil.png" alt="">
+                        <h3>Project Planning</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi
+                            fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+                        <div class="lil">
+                            <span>.</span>
+                            <a href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="var">
+                        <img src="./img/lil.png" alt="">
+                        <h3>Project Planning</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi
+                            fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+                        <div class="lil">
+                            <span>.</span>
+                            <a href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="var">
+                        <img src="./img/lil.png" alt="">
+                        <h3>Project Planning</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi
+                            fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+                        <div class="lil">
+                            <span>.</span>
+                            <a href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="var">
+                        <img src="./img/lil.png" alt="">
+                        <h3>Project Planning</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi
+                            fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+                        <div class="lil">
+                            <span>.</span>
+                            <a href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="var">
+                        <img src="./img/lil.png" alt="">
+                        <h3>Project Planning</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi
+                            fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+                        <div class="lil">
+                            <span>.</span>
+                            <a href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="var">
+                        <img src="./img/lil.png" alt="">
+                        <h3>Project Planning</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi
+                            fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+                        <div class="lil">
+                            <span>.</span>
+                            <a href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- work -->
+    <section class="work">
+        <img class="post" src="./img/IMAGE (1).png" alt="">
+        <div class="container">
+            <div class="center">
+                <h2 class="size">Ready to pull the trigger? <br> Get a quote today.</h2>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit varius <br> rhoncus,
+                    nullam pulvinar ut sollicitudin dictumst porttitor porttitor quis.</p>
+                <div class="right">
+                    <a href="#" class="BgRed">Get a quote</a>
+                    <a href="#" class="gog">Browse services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="img">
+        <img src="./img/IMAGE (10).png" alt="">
+    </div>
+    <!-- choose -->
+    <section class="choose">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <h2 class="size">We help you build on <br> your past and prepare <br> for the future</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit dictum <br> nam arcu ac eu
+                        orci purus amet eros, id lorem aliquet eget urna at <br> risus sit purus ac magnis blandit eu
+                        egestas imperdiet libero.</p>
+                    <div class="card">
+                        <div class="pop">
+                            <h1 id="countdown"> <span>+</span> 350</h1>
+                            <p class="text">Successful Projects</p>
+                        </div>
+                        <div class="pop">
+                            <h1 id="count">100<span>Y</span></h1>
+                            <p class="text">Successful Projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="./img/IMAGE (2).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- center -->
+    <section class="center">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <a href="#">/Past Projects</a>
+                    <h2 class="size">Our project results speak <br> for themselves</h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right">
+                        <a href="#" class="BgRed">Get a quote</a>
+                        <a href="#" class="gog">Browse services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel">
+                <div class="bag">
+                    <img src="./img/IMAGE (4).png" alt="">
+                    <div class="sel">
+                        <h3>Building construction in <br> Los Angeles, CA</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> lectus aenean sit
+                            elementum pellentesque ultrices sem.</p>
+                        <a href="#" class="const">Construction</a>
+                    </div>
+                </div>
+                <div class="bag">
+                    <img src="./img/IMAGE (5).png" alt="">
+                    <div class="sel">
+                        <h3>Building construction in <br> Los Angeles, CA</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> lectus aenean sit
+                            elementum pellentesque ultrices sem.</p>
+                        <a href="#" class="const">Construction</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- say -->
+    <section class="say">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <a href="#">/Testimonials</a>
+                    <h2 class="size">What our clients say <br> about us and our work</h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right">
+                        <a href="#" class="gog">Browse articles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row  justify-content-between align-items-center">
+                <div class="col-lg-8">
+                    <div class="box">
+                        <img src="./img/IMAGE (6).png" alt="">
+                        <div class="kul">
+                            <h4>“A true team of expert <br> contractors”</h4>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Convallis
+                                senectus non dui vel <br> tortor. Justo lectus integer arcu elit.</p>
+                            <span>John Carter</span>
+                            <p class="text">Malibu beach, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img class="ddd" src="./img/IMAGE (7).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news -->
+    <section class="news">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <a href="#">/Blog</a>
+                    <h2 class="size">Articles & News</h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right">
+                        <a href="#" class="gog">Browse articles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <img src="./img/IMAGE (8).png" alt="">
+                    <h3>12 designers tricks for picking the <br> perfect home color palette </h3>
+                    <p class="text">June 17, 2022</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                        <div class="flex">
+                            <img src="./img/IMAGE (9).png" alt="">
+                           <div class="nan">
+                            <h4>Paint trends 2022 - the <br> 17 colors you need for <br> the ultimate wonder <br> walls
+                            </h4>
+                            <p class="text">June 17, 2022</p>
+                           </div>
+                        </div>
+                        <div class="flex">
+                            <img src="./img/IMAGE (9).png" alt="">
+                           <div class="nan">
+                            <h4>Paint trends 2022 - the <br> 17 colors you need for <br> the ultimate wonder <br> walls
+                            </h4>
+                            <p class="text">June 17, 2022</p>
+                           </div>
+                        </div>
+                        <div class="flex">
+                            <img src="./img/IMAGE (9).png" alt="">
+                           <div class="nan">
+                            <h4>Paint trends 2022 - the <br> 17 colors you need for <br> the ultimate wonder <br> walls
+                            </h4>
+                            <p class="text">June 17, 2022</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row  justify-content-between align-items-center">
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    <div class="list">
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                   </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <ul>
+                        <p class="text">Menu</p>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog Post</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Services Single</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <ul>
+                        <p class="text">Shop</p>
+                        <li>
+                            <a href="#">Shop Single</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects Single</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <ul>
+                        <p class="text">Utility Pages</p>
+                        <li>
+                            <a href="#">Shop Single</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects Single</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Changelog</a>
+                        </li>
+                        <li>
+                            <a href="#">More Webflow</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <div class="block">
+                        <p class="text">Contact us</p>
+                         <div class="car">
+                             <div class="mmm">
+                                    <svg width="29" height="31" viewBox="0 0 29 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.36233 4.60435L7.42653 2.0332L13.8544 9.69365L9.25813 13.5504L16.0074 21.5939L20.6036 17.7372L27.0315 25.3976L23.9673 27.9688C21.0058 30.4538 16.5905 30.0675 14.1055 27.106L3.49953 14.4662C1.01453 11.5047 1.40083 7.08935 4.36233 4.60435Z" stroke="white" stroke-width="2"/>
+                                        </svg>
+                                   <div class="yon">
+                                    <h5>Call us</h5>
+                                    <h6>(323) 238-0682</h6>
+                                   </div>
+                                </div>
+                         </div>
+                         <div class="car">
+                            <div class="mmm">
+                                   <svg width="29" height="31" viewBox="0 0 29 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M4.36233 4.60435L7.42653 2.0332L13.8544 9.69365L9.25813 13.5504L16.0074 21.5939L20.6036 17.7372L27.0315 25.3976L23.9673 27.9688C21.0058 30.4538 16.5905 30.0675 14.1055 27.106L3.49953 14.4662C1.01453 11.5047 1.40083 7.08935 4.36233 4.60435Z" stroke="white" stroke-width="2"/>
+                                       </svg>
+                                  <div class="yon">
+                                   <h5>Email us</h5>
+                                   <h6>info@contractor.com</h6>
+                                  </div>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row  justify-content-between align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <p class="text">Copyright © Contractor X</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="nan">
+                       <h4>Designed by</h4>
+                        <span>BRIX Templates</span>
+                       <h4>| Powered by</h4>
+                        <span>Webflow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="Libs/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

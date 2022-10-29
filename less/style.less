@@ -1,0 +1,62 @@
+@import "./params/mix";
+@import "./header.less";
+@import "./main.less";
+@import "./services.less";
+@import "./work.less";
+@import "./choose.less";
+@import "./center.less";
+@import "./say.less";
+@import "./news.less";
+@import "./footer.less";
+
+body {
+  font-family: "Lato", "san-serif";
+}
+a.BgRed{
+  background: #FF4D01;
+  padding: 22px 35px;
+  &:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: white;
+    color: black;
+  }
+  .md-block({
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  })
+}
+p.text{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  padding-top: 20px; 
+  .sm-block({
+    font-size: 15px;
+    line-height: 25px;
+  }) 
+}
+h2.size{
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 62px;
+  color: #191919;
+  margin-top: 2px;
+  .sm-block{
+    font-size: 30px;
+    line-height: 36px;
+   }
+}
+.activeBars {
+  display: none;
+  .md(display , block);
+}
+
+.activeMenuBars {
+  display: block;
+  .md(display , none);
+}
+
